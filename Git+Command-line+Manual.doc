@@ -1,0 +1,2047 @@
+Message-ID: <5446780.33.1407142796950.JavaMail.js-confluence@tripod.jira.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_32_21675844.1407142796950"
+
+------=_Part_32_21675844.1407142796950
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Git Command-line Manual</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Git Command-line Manual</h1>
+    <div class=3D"Section1">
+        <div id=3D"div_expand" title=3D"Expand it to view table of contents=
+" style=3D"border:2px solid #CCCCCC; padding-top:5px;" class=3D"table_of_co=
+ntents">=20
+<div id=3D"expander-1516505422" class=3D"expand-container">=20
+<div id=3D"expander-control-1516505422" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">Table Of Contents</span>=20
+</div>=20
+<div id=3D"expander-content-1516505422" class=3D"expand-content">=20
+<div id=3D"expander-492540572" class=3D"expand-container">=20
+<div id=3D"expander-control-492540572" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">1 First-Time Git Setup</span>=20
+</div>=20
+<div id=3D"expander-content-492540572" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Gitcomeswithatoolcalled=E2=80=9Cgitconf=
+ig=E2=80=9Dthatletsyougetandsetconfigurationvariablesthatcontrolallaspectso=
+fhowgitlooksandoperates.Thesevariablescanbestoredinthreedifferentplaces:">G=
+it comes with a tool called =E2=80=9C<strong>git config=E2=80=9D </strong>t=
+hat lets you get and set configuration variables that control all aspects o=
+f how git looks and operates. These variables can be stored in three differ=
+ent&nbsp;&nbsp; places:</h6></li>
+</ul>=20
+<div id=3D"expander-1328123235" class=3D"expand-container">=20
+<div id=3D"expander-control-1328123235" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text"> 1.1 Linux</span>=20
+</div>=20
+<div id=3D"expander-content-1328123235" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-/etc/gitconfigfile:Containsvaluesforeve=
+ryuseronthesystemandalltheirrepositories.Ifyoupasstheoption--systemtogitcon=
+fig,itreadsandwritesfromthisfilespecifically."><strong>/etc/gitconfig file:=
+</strong> Contains values for every user on the system and all their reposi=
+tories. If you pass the option --<strong>system</strong> to <strong>git con=
+fig</strong>, it reads and writes from this file specifically.</h6></li>
+<li><h6 id=3D"GitCommand-lineManual-~/.gitconfigfile:Specifictoyouruser.You=
+canmakeGitreadandwritetothisfilespecificallybypassingthe--globaloption."><s=
+trong>~/.gitconfig file:</strong> Specific to your user. You can make Git r=
+ead and write to this file specifically by passing the <strong>--global</st=
+rong> option.</h6></li>
+<li><h6 id=3D"GitCommand-lineManual-Configfileinthegitdirectory(.git/config=
+)ofwhateverrepositoryyou=E2=80=99recurrentlyusing:Specifictothatsinglerepos=
+itory.Eachleveloverridesvaluesinthepreviouslevel,sovaluesin.git/configtrump=
+thosein/etc/gitconfig."><strong>Config file in the git directory </strong>(=
+<strong>.git/config</strong>) of whatever repository you=E2=80=99re current=
+ly using: Specific to that single repository. Each level overrides values i=
+n the previous level, so values in .git/config trump those in /etc/gitconfi=
+g.</h6></li>
+</ul>
+</div>=20
+</div>=20
+<div id=3D"expander-1133044557" class=3D"expand-container">=20
+<div id=3D"expander-control-1133044557" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">1.2 Windows</span>=20
+</div>=20
+<div id=3D"expander-content-1133044557" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-/etc/gitconfigfile:Containsvaluesforeve=
+ryuseronthesystemandalltheirrepositories.Ifyoupasstheoption--systemtogitcon=
+fig,itreadsandwritesfromthisfilespecifically..1"><strong>/etc/gitconfig fil=
+e:</strong> Contains values for every user on the system and all their repo=
+sitories. If you pass the option --<strong>system</strong> to <strong>git c=
+onfig</strong>, it reads and writes from this file specifically.</h6></li>
+<li><h6 id=3D"GitCommand-lineManual-Gitlooksforthe.gitconfigfileinthe$HOMEd=
+irectory(%USERPROFILE%inWindows=E2=80=99environment),whichisC:\Documentsand=
+Settings\$USERorC:\Users\$USERformostpeople,dependingonversion($USERis%USER=
+NAME%inWindows=E2=80=99environment">Git looks for the<strong> .gitconfig</s=
+trong> file in the <strong>$HOME</strong> directory (%USERPROFILE% in Windo=
+ws=E2=80=99 environment), which is C:\Documents and Settings\$USER or C:\Us=
+ers\$USER for most people, depending on version ($USER is %USERNAME% in Win=
+dows=E2=80=99 environment</h6></li>
+<li><h6 id=3D"GitCommand-lineManual-Configfileinthegitdirectory(.git/config=
+)ofwhateverrepositoryyou=E2=80=99recurrentlyusing:Specifictothatsinglerepos=
+itory.Eachleveloverridesvaluesinthepreviouslevel,sovaluesin.git/configtrump=
+thosein/etc/gitconfig..1"><strong>Config file in the git directory </strong=
+>(<strong>.git/config</strong>) of whatever repository you=E2=80=99re curre=
+ntly using: Specific to that single repository. Each level overrides values=
+ in the previous level, so values in .git/config trump those in /etc/gitcon=
+fig.</h6></li>
+</ul>
+</div>=20
+</div>=20
+<div id=3D"expander-1959989709" class=3D"expand-container">=20
+<div id=3D"expander-control-1959989709" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">1.3 Mac OS X</span>=20
+</div>=20
+<div id=3D"expander-content-1959989709" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-/etc/gitconfigfile:Containsvaluesforeve=
+ryuseronthesystemandalltheirrepositories.Ifyoupasstheoption--systemtogitcon=
+fig,itreadsandwritesfromthisfilespecifically..2"><strong>/etc/gitconfig fil=
+e:</strong> Contains values for every user on the system and all their repo=
+sitories. If you pass the option --<strong>system</strong> to <strong>git c=
+onfig</strong>, it reads and writes from this file specifically.</h6></li>
+<li><h6 id=3D"GitCommand-lineManual-Gitlooksforthe.gitconfigfileinthe$HOMEd=
+irectory">Git looks for the<strong> .gitconfig file in the $HOME directory<=
+/strong></h6></li>
+<li><h6 id=3D"GitCommand-lineManual-Configfileinthegitdirectory(.git/config=
+)ofwhateverrepositoryyou=E2=80=99recurrentlyusing:Specifictothatsinglerepos=
+itory.Eachleveloverridesvaluesinthepreviouslevel,sovaluesin.git/configtrump=
+thosein/etc/gitconfig"><strong>Config file in the git directory </strong>(<=
+strong>.git/config</strong>) of whatever repository you=E2=80=99re currentl=
+y using: Specific to that single repository. Each level overrides values in=
+ the previous level, so values in .git/config trump those in /etc/gitconfig=
+</h6></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-849013907" class=3D"expand-container">=20
+<div id=3D"expander-control-849013907" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">2 Configurations</span>=20
+</div>=20
+<div id=3D"expander-content-849013907" class=3D"expand-content">=20
+<div id=3D"expander-2107395177" class=3D"expand-container">=20
+<div id=3D"expander-control-2107395177" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text"> 2.1 Setting up your Identity</span>=20
+</div>=20
+<div id=3D"expander-content-2107395177" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-ThefirstthingyoushoulddowhenyouinstallG=
+itistosetyourusernameande-mailaddress.">The first thing you should do when =
+you install Git is to set your user name and e-mail address.</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitconfig--globaluser.name=E2=80=9C=
+&lt;username&gt;=E2=80=9D"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; &nbsp;&nbsp; Syntax: </strong>$git config --global user.name =E2=80=9C&l=
+t;username&gt;=E2=80=9D</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitconfig--globaluser.name&quot;Ra=
+myaKrishnaNallamothu&quot;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; Example: </strong>$git config --global user.name &quo=
+t;Ramya Krishna Nallamothu&quot;</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitconfig--globaluser.email=E2=80=
+=9C&lt;Email-id&gt;=E2=80=9D"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; Syntax: </strong>$git config --global user.email =E2=80=
+=9C&lt;Email-id&gt;=E2=80=9D</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitconfig--globaluser.emailrnallam=
+othu@tripodtech.net"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nb=
+sp; Example:</strong> $git config --global user.email <span lang=3D"zxx"><u=
+><a href=3D"mailto:rnallamothu@tripodtech.net" class=3D"external-link" rel=
+=3D"nofollow">rnallamothu@tripodtech.net</a></u></span></h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1594786246" class=3D"expand-container">=20
+<div id=3D"expander-control-1594786246" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">2.2 Setting up your Editor</span>=20
+</div>=20
+<div id=3D"expander-content-1594786246" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Youcanconfigurethedefaulttexteditorthat=
+willbeusedwhenGitneedsyoutotypeinamessage.Bydefault,Gitusesyoursystem=E2=80=
+=99sdefaulteditor,whichis">You can configure the default text editor that w=
+ill be used when Git needs you to type in a message. By default, Git uses y=
+our system=E2=80=99s default editor, which is</h6><h6 id=3D"GitCommand-line=
+Manual-generallyViorVim.">generally Vi or Vim.</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitconfig--globalcore.editor&lt;edi=
+torname&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Synta=
+x:</strong> $ git config --global core.editor &lt;editor name&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitconfig--globalcore.editoremacs"=
+><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: </strong=
+>$ git config --global core.editor emacs</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-96691990" class=3D"expand-container">=20
+<div id=3D"expander-control-96691990" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">2.3 Setting up your Diff Tool</span>=20
+</div>=20
+<div id=3D"expander-content-96691990" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Anotherusefuloptionyoumaywanttoconfigur=
+eisthedefaultdifftooltousetoresolvemergeconflicts.Sayyouwanttousevimdiff:">=
+Another useful option you may want to configure is the default diff tool to=
+ use to resolve merge conflicts. Say you want to use vimdiff:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitconfig--globalmerge.tool&lt;diff=
+tool&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sy=
+ntax:</strong> $ git config --global merge.tool &lt;diff tool&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitconfig--globalmerge.toolvimdiff=
+"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: <=
+/strong>$ git config --global merge.tool vimdiff</h6>
+<h6 id=3D"GitCommand-lineManual-Gitacceptskdiff3,tkdiff,meld,xxdiff,emerge,=
+vimdiff,gvimdiff,ecmerge,and">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; &nbsp;&nbsp; Git accepts kdiff3, tkdiff, meld, xxdiff, emerge, vi=
+mdiff, gvimdiff, ecmerge, and</h6>
+<h6 id=3D"GitCommand-lineManual-opendiffasvalidmergetools.">&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; opendiff as valid=
+ merge tools.</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1378290759" class=3D"expand-container">=20
+<div id=3D"expander-control-1378290759" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">2.4 Checking Your Settings</span>=20
+</div>=20
+<div id=3D"expander-content-1378290759" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ifyouwanttocheckyoursettings,youcanuset=
+he=E2=80=9Cgitconfig=E2=80=93list=E2=80=9DcommandtolistallthesettingsGitcan=
+findatthatpoint:">If you want to check your settings, you can use the<stron=
+g> =E2=80=9Cgit config =E2=80=93list=E2=80=9D </strong>command to list all =
+the settings Git can find at that point:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitconfig=E2=80=93list"><strong>&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> $ git =
+config =E2=80=93list</h6>
+<h6 id=3D"GitCommand-lineManual-Result:"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:</strong></h6>
+<h6 id=3D"GitCommand-lineManual-user.name=3DRamyaKrishnaNallamothu">&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; user.name=
+=3DRamya Krishna Nallamothu</h6>
+<h6 id=3D"GitCommand-lineManual-user.email=3Drnallamothu@tripodtech.net"><a=
+ href=3D"mailto:user.email=3Drnallamothu@tripodtech.net" class=3D"external-=
+link" rel=3D"nofollow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; &nbsp; user.email=3Drnallamothu@tripodtech.net</a></h6>
+<h6 id=3D"GitCommand-lineManual-color.status=3Dauto">&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color.status=3Dauto</h6>
+<h6 id=3D"GitCommand-lineManual-color.branch=3Dauto">&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; color.branch=3Dauto</h6>
+<h6 id=3D"GitCommand-lineManual-color.interactive=3Dauto">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; color.interactive=3Dauto</h6>
+<h6 id=3D"GitCommand-lineManual-color.diff=3Dauto">&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; color.diff=3Dauto</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1137120319" class=3D"expand-container">=20
+<div id=3D"expander-control-1137120319" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">2.5 Getting Help</span>=20
+</div>=20
+<div id=3D"expander-content-1137120319" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-IfyoueverneedhelpwhileusingGit,thereare=
+threewaystogetthemanualpage(manpage)helpforanyoftheGitcommands:">If you eve=
+r need help while using Git, there are three ways to get the manual page (m=
+an page) help for any of the Git commands:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; Syntax: </strong></h6>
+<h6 id=3D"GitCommand-lineManual-$githelp&lt;verb&gt;">&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ git help &lt;verb&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-$git&lt;verb&gt;--help">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ git &lt;verb&gt; --help</h6>
+<h6 id=3D"GitCommand-lineManual-$mangit-&lt;verb&gt;">&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ man git-&lt;verb&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:youcangetthemanpagehelpfortheconfig=
+commandbyrunning"><strong>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; Example: </stron=
+g> you can get the man page help for the config command by running</h6>
+<h6 id=3D"GitCommand-lineManual-$githelpconfig">&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; &nbsp;&nbsp; $ git help config</h6>
+<h6 id=3D"GitCommand-lineManual-Thesecommandsarenicebecauseyoucanaccessthem=
+anywhere,evenoffline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; The=
+se commands are nice because you can access them anywhere, even offline</h6=
+>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-624368791" class=3D"expand-container">=20
+<div id=3D"expander-control-624368791" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">3 Git Basics</span>=20
+</div>=20
+<div id=3D"expander-content-624368791" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-YoucangetaGitprojectusingtwomainapproac=
+hes.ThefirsttakesanexistingprojectordirectoryandimportsitintoGit.Thesecondc=
+lonesanexistingGitrepositoryfromanotherserver.">You can get a Git project u=
+sing two main approaches. The first takes an existing project or directory =
+and imports it into Git. The second clones an existing Git repository from =
+another server.</h6></li>
+</ul>=20
+<div id=3D"expander-32606769" class=3D"expand-container">=20
+<div id=3D"expander-control-32606769" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">3.1 Initializing a Repository in an Exi=
+sting Directory</span>=20
+</div>=20
+<div id=3D"expander-content-32606769" class=3D"expand-content">
+<h6 style=3D"margin-left: 53.7667px;" id=3D"GitCommand-lineManual-Note:Crea=
+teanemptyrepositoryonBitBucket">Note: <span>Create an empty repository on B=
+itBucket</span></h6>
+<h6 style=3D"margin-left: 53.7667px;" id=3D"GitCommand-lineManual-gitinit:I=
+fyou=E2=80=99restartingtotrackanexistingprojectinGit,youneedtogototheprojec=
+t=E2=80=99sdirectoryandtype"><strong>git init</strong>: If you=E2=80=99re s=
+tarting to track an existing project in Git, you need to go to the project=
+=E2=80=99s directory and type</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-Syntax:$giti=
+nit"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> $ git in=
+it</h6>
+<h6 id=3D"GitCommand-lineManual-Thiscreatesanewsubdirectorynamed=E2=80=9C.g=
+it=E2=80=9Dthatcontainsallofyournecessaryrepositoryfiles=E2=80=94aGitreposi=
+toryskeleton.Atthispoint,nothingin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; This creates a new su=
+bdirectory named =E2=80=9C<strong>.git=E2=80=9D</strong> that contains all =
+of your necessary repository files =E2=80=94 a Git repository skeleton. At =
+this point, nothing in</h6>
+<h6 id=3D"GitCommand-lineManual-yourprojectistrackedyet.">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;=
+ your project is tracked yet.</h6>
+<h6 id=3D"GitCommand-lineManual-gitadd:Ifyouwanttospecifythefiletobetracked=
+youcanusethebelowcommand"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; &nbsp; &nbsp; git add:</strong> If you want to specify the file to =
+be tracked you can use the below command</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitadd&lt;pathtofilefilename/Direct=
+ory&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &n=
+bsp; Syntax: </strong>$git add &lt;path to file filename/Directory&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitaddlog4j.properties"><strong>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; Example: </str=
+ong>$git add log4j.properties</h6>
+<h6 id=3D"GitCommand-lineManual-$gitaddusers/useradmin.txt(or)gitadd*">&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;=
+ &nbsp; $git add users/useradmin.txt (or) git add *</h6>
+<h6 id=3D"GitCommand-lineManual-gitcommit:Aftertrackingfilesyouneedtocommit=
+thechanges,forthatusethebelowcommand:"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; git commit:</strong> After tracking file=
+s you need to commit the changes, for that use the below command:</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitcommit-m=E2=80=9C&lt;commitmessa=
+ge&gt;=E2=80=9D"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&=
+nbsp; &nbsp; Syntax: </strong>$git commit -m =E2=80=9C&lt;commit message&gt=
+;=E2=80=9D</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitcommit-m=E2=80=9CInitialcommit=
+=E2=80=9D"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; =
+&nbsp; Example: </strong>$git commit -m =E2=80=9CInitial commit=E2=80=9D</h=
+6>
+<h6 id=3D"GitCommand-lineManual-Note:Unlikesvn,commitoperationpusheschanges=
+tolocalgitrepositoryindeveloper=E2=80=99smachine.Itwon'treflectchangesonthe=
+remotegitrepository"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; &nbsp; &nbsp; Note: </strong>Unlike svn, commit operation pushes changes=
+ to local git repository in developer=E2=80=99s machine. It won't reflect c=
+hanges on the remote git repository</h6>
+<h6 id=3D"GitCommand-lineManual-hostedonBitBucket.Againyouneedtoperformpush=
+operationtopushchangestoremoterepository.Thisindicatescommitscanbedonewheny=
+ou">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;=
+ &nbsp;&nbsp; hosted on BitBucket. Again you need to perform push operation=
+ to push changes to remote repository. This indicates commits can be done w=
+hen you</h6>
+<h6 id=3D"GitCommand-lineManual-areinofflinealso.Whenyouareonline,simplycan=
+pushchangestoremoterepository.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; are in offline also. When you are=
+ online, simply can push changes to remote repository.</h6>
+<h6 id=3D"GitCommand-lineManual-gitpush:Topushchangesinlocalgitrepositoryto=
+remoterepository,usethebelowcommand:"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; &nbsp; &nbsp;&nbsp; git push</strong>: To push changes in local git=
+ repository to remote repository, use the below command:</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitpush&lt;RemoteName&gt;&lt;Branch=
+Name&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&n=
+bsp; Syntax: </strong>$git push &lt;Remote Name&gt; &lt;Branch Name&gt;</h6=
+>
+<h6 id=3D"GitCommand-lineManual-Example:$gitpushhttps://bitbucket.org/rnall=
+amothu/eureqa.gitmaster(or)"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp; &nbsp; &nbsp; Example:</strong> $git push <span lang=3D"zxx"><u><a hre=
+f=3D"https://bitbucket.org/rnallamothu/eureqa" class=3D"external-link" rel=
+=3D"nofollow">https://bitbucket.org/rnallamothu/eureqa</a></u></span>.git m=
+aster (<strong>or</strong>)</h6>
+<h6 style=3D"margin-left: 48.0px;" id=3D"GitCommand-lineManual-$gitpushorig=
+inmasterorigin=E2=80=93Itistheshortnamefortheremote=E2=80=9Chttps://bitbuck=
+et.org/rnallamothu/eureqa.git">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; $git push origin m=
+aster origin =E2=80=93 It is the short name for the remote =E2=80=9C<span l=
+ang=3D"zxx"><u><a href=3D"https://bitbucket.org/rnallamothu/eureqa.git" cla=
+ss=3D"external-link" rel=3D"nofollow">https://bitbucket.org/rnallamothu/eur=
+eqa.git</a></u></span></h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1683090868" class=3D"expand-container">=20
+<div id=3D"expander-control-1683090868" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">3.2 Cloning an Existing Repository</spa=
+n>=20
+</div>=20
+<div id=3D"expander-content-1683090868" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-IfyouwanttogetacopyofanexistingGitrepos=
+itory=E2=80=94forexample,aprojectyou=E2=80=99dliketocontributeto=E2=80=94th=
+ecommandyouneedis=E2=80=9Cgitclone=E2=80=9D.Ifyou=E2=80=99refamiliarwithoth=
+erVCSsystemssuchasSubversion,you=E2=80=99llnoticethatthecommandiscloneandno=
+tcheckout.">If you want to get a copy of an existing Git repository =E2=80=
+=94 for example, a project you=E2=80=99d like to contribute to =E2=80=94 th=
+e command you need is =E2=80=9Cgit clone=E2=80=9D. If you=E2=80=99re famili=
+ar with other VCS systems such as Subversion, you=E2=80=99ll notice that th=
+e command is clone and not checkout<strong>.</strong></h6></li>
+</ul>
+<h6 style=3D"margin-left: 53.7667px;" id=3D"GitCommand-lineManual-Note:Gitr=
+eceivesacopyofnearlyalldatathattheserverhas.Everyversionofeveryfileforthehi=
+storyoftheprojectispulleddownwhenyourun=E2=80=9Cgitclone=E2=80=9D.Infact,if=
+yourserverdiskgetscorrupted,youcanuseanyoftheclonesonanyclienttosettheserve=
+rbacktothestate"><strong>Note: </strong>Git receives a copy of nearly all d=
+ata that the server has. Every version of every file for the history of the=
+ project is pulled down when you run =E2=80=9Cgit clone=E2=80=9D. In fact, =
+if your server disk gets corrupted, you can use any of the clones on any cl=
+ient to set the server back to the state it was in when it was cloned</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-Syntax:$gitc=
+lone&lt;RepositoryURL&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syn=
+tax:</strong>&nbsp;&nbsp;&nbsp;&nbsp; $git clone &lt;Repository URL&gt;</h6=
+>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-Example:$git=
+clonehttps://rnallamothu@bitbucket.org/rnallamothu/eureqa.git">&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; Example:<span> $git clone </span><span><u><span><a href=
+=3D"https://rnallamothu@bitbucket.org/rnallamothu/eureqa.git" class=3D"exte=
+rnal-link" rel=3D"nofollow">https://rnallamothu@bitbucket.org/rnallamothu/e=
+ureqa.git</a></span></u></span></h6>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-Theabovecomm=
+andcreatesadirectorynamed=E2=80=9Ceureqa=E2=80=9D,initializesa=E2=80=9C.git=
+=E2=80=9Ddirectoryinsideit,pullsdownallthedataforthatrepository,andchecksou=
+taworkingcopyofthelatestversion.">&nbsp;&nbsp;&nbsp;&nbsp; The above comman=
+d creates a directory named =E2=80=9C<strong>eureqa=E2=80=9D</strong>, init=
+ializes a =E2=80=9C.<strong>git=E2=80=9D</strong> directory inside it, pull=
+s down all the data for that repository, and checks out a working copy of t=
+he latest version.</h6>
+<h6 id=3D"GitCommand-lineManual-Result:Cloninginto'eureqa'..."><strong>&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:&nbsp=
+;&nbsp;&nbsp; </strong>Cloning into 'eureqa'...</h6>
+<h6 id=3D"GitCommand-lineManual-Passwordfor'https://rnallamothu@bitbucket.o=
+rg':&lt;Enterpassword&gt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Password for '<span><u><a href=3D"htt=
+ps://rnallamothu@bitbucket.org" class=3D"external-link" rel=3D"nofollow">ht=
+tps://rnallamothu@bitbucket.org</a></u></span>': <strong>&lt;Enter password=
+ &gt;</strong></h6>
+<h6 id=3D"GitCommand-lineManual-remote:Countingobjects:29,done.">&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; remo=
+te: Counting objects: 29, done.</h6>
+<h6 id=3D"GitCommand-lineManual-remote:Compressingobjects:100%(18/18),done.=
+">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; remote: Compressing objects: 100% (18/18), done.</h6>
+<h6 id=3D"GitCommand-lineManual-remote:Total29(delta1),reused0(delta0)">&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; remote: =
+Total 29 (delta 1), reused 0 (delta 0)</h6>
+<h6 id=3D"GitCommand-lineManual-Unpackingobjects:100%(29/29),done.">&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Un=
+packing objects: 100% (29/29), done.</h6>
+<h6 id=3D"GitCommand-lineManual-Youwouldseetheoutputsomethinglikeabove">&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; You would see the output something like above</h6>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ifyouwanttoclonerepositoryintodirectory=
+otherthaneureqarunthebelowcommand:">If you want to clone repository into di=
+rectory other than eureqa run the below command:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitclone&lt;RepositoryURL&gt;&lt;Ta=
+rgetDirectory&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; Syntax: &nbsp; &nbsp; </strong>$git clone &lt;Repository URL&gt; &lt=
+;Target Directory&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitclonehttps://rnallamothu@bitbuc=
+ket.org/rnallamothu/eureqa.gitEureQA"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; &nbsp; &nbsp; Example:</strong>&nbsp; $git clone <a href=3D"https://rnall=
+amothu@bitbucket.org/rnallamothu/eureqa.git" class=3D"external-link" rel=3D=
+"nofollow">https://rnallamothu@bitbucket.org/rnallamothu/eureqa.git</a> Eur=
+eQA</h6>
+<h6 id=3D"GitCommand-lineManual-Result:Cloninginto'EureQA'..."><strong>&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; </strong>Cloning into 'EureQA'...</h6>
+<h6 id=3D"GitCommand-lineManual-Passwordfor'https://rnallamothu@bitbucket.o=
+rg':&lt;Enterpassword&gt;.1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Password for '<span><u><a href=3D"https:=
+//rnallamothu@bitbucket.org" class=3D"external-link" rel=3D"nofollow">https=
+://rnallamothu@bitbucket.org</a></u></span>': <strong>&lt;Enter password &g=
+t;</strong></h6>
+<h6 id=3D"GitCommand-lineManual-remote:Countingobjects:29,done..1">&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; remote: Count=
+ing objects: 29, done.</h6>
+<h6 id=3D"GitCommand-lineManual-remote:Compressingobjects:100%(18/18),done.=
+.1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; r=
+emote: Compressing objects: 100% (18/18), done.</h6>
+<h6 id=3D"GitCommand-lineManual-remote:Total29(delta1),reused0(delta0).1">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; remote=
+: Total 29 (delta 1), reused 0 (delta 0)</h6>
+<h6 id=3D"GitCommand-lineManual-Unpackingobjects:100%(29/29),done..1">&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Unpacking =
+objects: 100% (29/29), done.</h6>
+<h6 id=3D"GitCommand-lineManual-Youwouldseetheoutputsomethinglikeabove.1">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You wo=
+uld see the output something like above</h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-1244381924" class=3D"expand-container">=20
+<div id=3D"expander-control-1244381924" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">4 Working with Remotes</span>=20
+</div>=20
+<div id=3D"expander-content-1244381924" class=3D"expand-content">=20
+<div id=3D"expander-4531997" class=3D"expand-container">=20
+<div id=3D"expander-control-4531997" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">4.1 Showing Your Remotes</span>=20
+</div>=20
+<div id=3D"expander-content-4531997" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Toseewhichremoteserversyouhaveconfigure=
+d,youcanrunthe=E2=80=9Cgitremote=E2=80=9Dcommand.Itliststheshortnamesofeach=
+remotehandleyou=E2=80=99ve">To see which remote servers you have configured=
+, you can run the <strong>=E2=80=9Cgit remote=E2=80=9D</strong> command. It=
+ lists the short names of each remote handle you=E2=80=99ve</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-specified.Youcanalsospecify-v,whichshowsyou=
+theURLthatGithasstoredfortheshortnametobeexpandedto:">&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified. You can also=
+ specify -v, which shows you the URL that Git has&nbsp; stored for the shor=
+t name to be expanded to:</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremote"><strong>&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> $git remote</h6>
+<h6 id=3D"GitCommand-lineManual-Result:origin"><strong>&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:</strong>&nbsp;&nbsp; origin</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremote-v"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; &nbsp;&nbsp; Syntax:</strong>&nbsp; $git remote -v</h6>
+<h6 id=3D"GitCommand-lineManual-Result:originhttps://rnallamothu@bitbucket.=
+org/rnallamothu/eureqa.git(fetch)"><strong>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; =
+&nbsp; Result:</strong> &nbsp; origin <a href=3D"https://rnallamothu@bitbuc=
+ket.org/rnallamothu/eureqa.git" class=3D"external-link" rel=3D"nofollow">ht=
+tps://rnallamothu@bitbucket.org/rnallamothu/eureqa.git</a> (fetch)</h6>
+<h6 id=3D"GitCommand-lineManual-originhttps://rnallamothu@bitbucket.org/rna=
+llamothu/eureqa.git(push)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; origin <a href=3D"https://rnallamot=
+hu@bitbucket.org/rnallamothu/eureqa.git" class=3D"external-link" rel=3D"nof=
+ollow">https://rnallamothu@bitbucket.org/rnallamothu/eureqa.git</a> (push)<=
+/h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1193080087" class=3D"expand-container">=20
+<div id=3D"expander-control-1193080087" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">4.2 Adding Remote Repositories</span>=
+=20
+</div>=20
+<div id=3D"expander-content-1193080087" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-ToaddanewremoteGitrepositoryasashortnam=
+eyoucanreferenceeasily,runthebelowcommand">To add a new remote Git reposito=
+ry as a shortname you can reference easily, run the below command</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremoteadd[shortname][URL]"><stro=
+ng>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> =
+&nbsp; &nbsp;&nbsp; $git remote add [shortname] [URL]</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitremoteaddgleasonhttps://bitbuck=
+et.org/rnallamothu/gleason.git"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; &nbsp;&nbsp; Example:&nbsp; </strong>$git remote add gleason <span lang=
+=3D"zxx"><u><a href=3D"https://bitbucket.org/rnallamothu/gleason.git" class=
+=3D"external-link" rel=3D"nofollow">https://bitbucket.org/rnallamothu/gleas=
+on.git</a></u></span></h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremote.1"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Syntax: &nbsp;&nbsp; </strong>$ git rem=
+ote</h6>
+<h6 id=3D"GitCommand-lineManual-Result:origingleason"><strong>&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:&nbsp;&nbsp;&nbsp;&nbsp; <=
+/strong>origin&nbsp; gleason</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremote-v.1"><strong>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> &nbsp; &nbsp; &nbsp; =
+$git remote -v</h6>
+<h6 id=3D"GitCommand-lineManual-Result:originhttps://rnallamothu@bitbucket.=
+org/rnallamothu/eureqa.git(fetch).1"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; Result:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>origin <a=
+ href=3D"https://rnallamothu@bitbucket.org/rnallamothu/eureqa.git" class=3D=
+"external-link" rel=3D"nofollow">https://rnallamothu@bitbucket.org/rnallamo=
+thu/eureqa.git</a> (fetch)</h6>
+<h6 id=3D"GitCommand-lineManual-originhttps://rnallamothu@bitbucket.org/rna=
+llamothu/eureqa.git(push).1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; origin <a href=3D"https://rnallamothu@bitbucket.org/rnallamothu/eu=
+reqa.git" class=3D"external-link" rel=3D"nofollow">https://rnallamothu@bitb=
+ucket.org/rnallamothu/eureqa.git</a> (push)</h6>
+<h6 id=3D"GitCommand-lineManual-gleasonhttps://rnallamothu@bitbucket.org/rn=
+allamothu/gleason.git(fetch)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; gleason <a href=3D"https://rnallamothu@bitbucket.org/rnallamothu/=
+gleason" class=3D"external-link" rel=3D"nofollow">https://rnallamothu@bitbu=
+cket.org/rnallamothu/gleason</a> .git (fetch)</h6>
+<h6 id=3D"GitCommand-lineManual-gleasonhttps://rnallamothu@bitbucket.org/rn=
+allamothu/gleason.git(push)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; gleason <a href=3D"https://rnallamothu@bitbucket.org/rnallamothu/g=
+leason" class=3D"external-link" rel=3D"nofollow">https://rnallamothu@bitbuc=
+ket.org/rnallamothu/gleason</a> .git (push)</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1560661268" class=3D"expand-container">=20
+<div id=3D"expander-control-1560661268" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">4.3 Inspecting a Remote</span>=20
+</div>=20
+<div id=3D"expander-content-1560661268" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ifyouwanttoseemoreinformationaboutapart=
+icularremote,youcanusethebelowcommand">If you want to see more information =
+about a particular remote, you can use the below command</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremoteshow[remote-name]command."=
+><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> =
+&nbsp; &nbsp; $git remote show [remote-name] command.</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitremoteshoworigin"><strong>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: $git remote show origi=
+n </strong></h6>
+<h6 id=3D"GitCommand-lineManual-Result:*remoteorigin"><strong>&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result: &nbsp; &nbsp; </strong>* remote=
+ origin</h6>
+<h6 id=3D"GitCommand-lineManual-FetchURL:https://rnallamothu@bitbucket.org/=
+rnallamothu/eureqa.git">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fetch URL: <a =
+href=3D"https://rnallamothu@bitbucket.org/rnallamothu/eureqa.git" class=3D"=
+external-link" rel=3D"nofollow">https://rnallamothu@bitbucket.org/rnallamot=
+hu/eureqa.git</a></h6>
+<h6 id=3D"GitCommand-lineManual-PushURL:https://rnallamothu@bitbucket.org/r=
+nallamothu/eureqa.git">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Push URL: <a href=3D"=
+https://rnallamothu@bitbucket.org/rnallamothu/" class=3D"external-link" rel=
+=3D"nofollow">https://rnallamothu@bitbucket.org/rnallamothu/</a> eureqa.git=
+</h6>
+<h6 id=3D"GitCommand-lineManual-HEADbranch:master">&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; HEAD branch: master</h6>
+<h6 id=3D"GitCommand-lineManual-Remotebranch:">&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; Remote branch:</h6>
+<h6 id=3D"GitCommand-lineManual-mastertracked">&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mas=
+ter tracked</h6>
+<h6 id=3D"GitCommand-lineManual-Localbranchconfiguredfor'gitpull':">&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; Local branch configured for 'git pull':</h6>
+<h6 id=3D"GitCommand-lineManual-mastermergeswithremotemaster">&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; master merges with remote master</h6>
+<h6 id=3D"GitCommand-lineManual-Localrefconfiguredfor'gitpush':">&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp; Local ref configured for 'git push':</h6>
+<h6 id=3D"GitCommand-lineManual-masterpushestomaster(localoutofdate)">&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; master pushes to master (local out of date)</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-887750308" class=3D"expand-container">=20
+<div id=3D"expander-control-887750308" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">4.4 Renaming Remotes</span>=20
+</div>=20
+<div id=3D"expander-content-887750308" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ifyouwanttorenameareference,innewervers=
+ionsofGityoucanrunthebelowcommand">If you want to rename a reference, in ne=
+wer versions of Git you can run the below command</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremoterename&lt;OldRemoteName&gt=
+;&lt;NewRemoteName&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; Syntax: </strong>$git remote rename &lt;Old Remote Name&gt; &lt;New R=
+emote Name&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Forinstance,ifyouwanttorename=E2=80=9Corigi=
+n=E2=80=9Dto=E2=80=9CeureQA=E2=80=9Dyoucandosowith">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; For instance, if you want to rename =E2=80=9C<strong>origin</strong>=E2=
+=80=9D to =E2=80=9C<strong>eureQA</strong>=E2=80=9D you can do so with</h6>
+<h6 id=3D"GitCommand-lineManual-=E2=80=9Cgitremoterename=E2=80=9D">&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; =E2=80=9C<strong>git remote rename=E2=80=9D</strong></h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitremoterenameorigineureQA"><stro=
+ng>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example:</strong> $git remote renam=
+e origin eureQA</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremote.2"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; Syntax:</strong>&nbsp;&nbsp;&nbsp;&nbsp; $ git remot=
+e</h6>
+<h6 id=3D"GitCommand-lineManual-Result:eureQA"><strong>&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; Result: &nbsp; &nbsp; </strong>eureQA</h6>
+<h6 id=3D"GitCommand-lineManual-gleason">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gleason</=
+h6>
+</div>=20
+</div>=20
+<div id=3D"expander-617365642" class=3D"expand-container">=20
+<div id=3D"expander-control-617365642" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">4.5 Removing Remotes</span>=20
+</div>=20
+<div id=3D"expander-content-617365642" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ifyouwanttoremoveareferenceforsomereaso=
+n=E2=80=94you=E2=80=99vemovedtheserverorarenolongerusingaparticularmirror,o=
+rperhapsacontributorisn=E2=80=99t">If you want to remove a reference for so=
+me reason =E2=80=94 you=E2=80=99ve moved the server or are no longer using =
+a particular mirror, or perhaps a contributor isn=E2=80=99t</h6><h6 id=3D"G=
+itCommand-lineManual-contributinganymore=E2=80=94youcanusethebelowcommand">=
+contributing anymore =E2=80=94 you can use the below command</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremoterm&lt;RemoteName&gt;"><str=
+ong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:&nbsp;&nbsp;&nb=
+sp; </strong>$git remote rm &lt;Remote Name&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitremotermeureQA"><strong>&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: </strong>$git remote rm =
+eureQA</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitremote.3"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:&nbsp;&nbsp;&nbsp; </strong>$git =
+remote</h6>
+<h6 id=3D"GitCommand-lineManual-Result:gleason"><strong>&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:&nbsp;&nbsp;&nbsp;&nbsp; </strong>glea=
+son<span style=3D"color: rgb(0,0,0);"> <br /></span></h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-513252659" class=3D"expand-container">=20
+<div id=3D"expander-control-513252659" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">5 Recording Changes to the Repository</=
+span>=20
+</div>=20
+<div id=3D"expander-content-513252659" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Rememberthateachfileinyourworkingdirect=
+orycanbeinoneoftwostates:trackedoruntracked.Trackedfilesarefilesthatwereint=
+helastsnapshot;theycan">Remember that each file in your working directory c=
+an be in one of two states: tracked or untracked. Tracked files are files t=
+hat were in the last snapshot; they can</h6><h6 id=3D"GitCommand-lineManual=
+-beunmodified,modified,orstaged.Untrackedfilesareeverythingelse=E2=80=94any=
+filesinyourworkingdirectorythatwerenotinyourlastsnapshotandarenotin">be unm=
+odified, modified, or staged. Untracked files are everything else =E2=80=94=
+ any files in your working directory that were not in your last snapshot an=
+d are not in</h6><h6 id=3D"GitCommand-lineManual-yourstagingarea.">your sta=
+ging area.</h6></li>
+</ul>=20
+<div id=3D"expander-72394176" class=3D"expand-container">=20
+<div id=3D"expander-control-72394176" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">5.1 Checking the Status of Your Files</=
+span>=20
+</div>=20
+<div id=3D"expander-content-72394176" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Themaintoolyouusetodeterminewhichfilesa=
+reinwhichstateisthe=E2=80=9Cgit">The main tool you use to determine which f=
+iles are in which state is the =E2=80=9C<strong>git </strong></h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-status=E2=80=9Dcommands.Ifyourunthiscommand=
+directlyafteraclone,youshouldseesomethinglikethis:"><strong>&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; status=E2=80=9D</strong> commands.<=
+strong> </strong>If you run this command directly after a clone, you should=
+ see something like this:</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitstatus"><strong>&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Syntax:</strong> $ git status</h6>
+<h6 id=3D"GitCommand-lineManual-Result:Onbranchmasternothingtocommit(workin=
+gdirectoryclean)"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;=
+ Result: </strong>On branch master nothing to commit (working directory cle=
+an)</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-289050329" class=3D"expand-container">=20
+<div id=3D"expander-control-289050329" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">5.2 Making Changes</span>=20
+</div>=20
+<div id=3D"expander-content-289050329" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Let=E2=80=99ssayyouaddanewfiletoyourpro=
+ject,asimple=E2=80=9Cexample.txt=E2=80=9Dfile.Ifthefiledidn=E2=80=99texistb=
+efore,andyourun=E2=80=9Cgitstatus=E2=80=9D,youseeyouruntrackedfile">Let=E2=
+=80=99s say you add a new file to your project, a simple <strong>=E2=80=9Ce=
+xample.txt=E2=80=9D</strong> file. If the file didn=E2=80=99t exist before,=
+ and you run =E2=80=9C<strong>git status=E2=80=9D, </strong>you see your un=
+tracked file</h6><h6 id=3D"GitCommand-lineManual-likeso:">like so:</h6></li=
+>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitstatus.1"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; &nbsp; &nbsp; Syntax: </strong>$git status</h6>
+<h6 id=3D"GitCommand-lineManual-Result:#Onbranchmaster"><strong>&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Result:&nbsp; # </strong>On branch m=
+aster</h6>
+<h6 id=3D"GitCommand-lineManual-#Untrackedfiles:">&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; # Untracked files:</h6>
+<h6 id=3D"GitCommand-lineManual-#(use&quot;gitadd&lt;file&gt;...&quot;toinc=
+ludeinwhatwillbecommitted)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nb=
+sp; &nbsp;&nbsp; # (use &quot;git add &lt;file&gt;...&quot; to include in w=
+hat will be committed)</h6>
+<h6 id=3D"GitCommand-lineManual-#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p; &nbsp; &nbsp; &nbsp; #</h6>
+<h6 id=3D"GitCommand-lineManual-#example.txt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; #<strong>example.txt</strong></h6>
+<h6 id=3D"GitCommand-lineManual-#nothingaddedtocommitbutuntrackedfilesprese=
+nt(use&quot;gitadd&quot;totrack)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbs=
+p; &nbsp;&nbsp;&nbsp;&nbsp; #nothing added to commit but untracked files pr=
+esent (use &quot;git add&quot; to track)</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-607711245" class=3D"expand-container">=20
+<div id=3D"expander-control-607711245" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">5.3 Tracking New Files</span>=20
+</div>=20
+<div id=3D"expander-content-607711245" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Inordertobegintrackinganewfile,youuseth=
+ecommandgitadd.Tobegintrackingtheexample.txtfile,youcanrunthis:">In order t=
+o begin tracking a new file, you use the command git add. To begin tracking=
+ the <strong>example.txt</strong> file, you can run this:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitadd&lt;filename&gt;"><strong>&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> &nbsp;=
+&nbsp; $ git add &lt;filename&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitaddexample.txt"><strong>&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Example:</strong> $git add examp=
+le.txt</h6>
+<h6 id=3D"GitCommand-lineManual-Ifyourunyourstatuscommandagain,youcanseetha=
+tyourexample.txtfileisnowtrackedandstaged:">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you run your status command again, you can=
+ see that your <strong>example.txt</strong> file is now tracked and staged:=
+</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitstatus.2"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; &nbsp;&nbsp; Syntax:</strong> $ git status</h6>
+<h6 id=3D"GitCommand-lineManual-Result:#Onbranchmaster.1"><strong>&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:</strong>&nbsp; # On branch =
+master</h6>
+<h6 id=3D"GitCommand-lineManual-#Changestobecommitted:">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; #Changes to be committed:</h6>
+<h6 id=3D"GitCommand-lineManual-#(use&quot;gitresetHEAD&lt;file&gt;...&quot=
+;tounstage)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; # (use &qu=
+ot;git reset HEAD &lt;file&gt;...&quot; to unstage)</h6>
+<h6 id=3D"GitCommand-lineManual-#.1">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;=
+&nbsp; &nbsp; #</h6>
+<h6 id=3D"GitCommand-lineManual-#newfile:example.txt">&nbsp;&nbsp;&nbsp;&nb=
+sp; &nbsp; &nbsp; &nbsp;&nbsp; # new file: example.txt</h6>
+<h6 id=3D"GitCommand-lineManual-Youcantellthatit=E2=80=99sstagedbecauseit=
+=E2=80=99sunderthe=E2=80=9CChangestobecommitted=E2=80=9Dheading.">&nbsp;&nb=
+sp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; You can tell that it=E2=80=99s s=
+taged because it=E2=80=99s under the =E2=80=9CChanges to be committed=E2=80=
+=9D heading.</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1300487468" class=3D"expand-container">=20
+<div id=3D"expander-control-1300487468" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">5.4 Staging Modified Files</span>=20
+</div>=20
+<div id=3D"expander-content-1300487468" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Let=E2=80=99schangeafilethatwasalreadyt=
+racked.Ifyouchangeapreviouslytrackedfilecalled=E2=80=9Clog4j.properties=E2=
+=80=9Dandthenrunyourstatuscommandsagain,you">Let=E2=80=99s change a file th=
+at was already tracked. If you change a previously tracked file called <str=
+ong>=E2=80=9Clog4j.properties=E2=80=9D</strong> and then run your <strong>s=
+tatus</strong> commands again, you</h6><h6 id=3D"GitCommand-lineManual-gets=
+omethingthatlookslikethis:">get something that looks like this:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitstatus.3"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax: </strong>$git status</h6>
+<h6 id=3D"GitCommand-lineManual-Result:#Onbranchmaster.2"><strong>&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result: # </strong>On branch =
+master</h6>
+<h6 id=3D"GitCommand-lineManual-#Changestobecommitted:.1">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; #Changes to be com=
+mitted:</h6>
+<h6 id=3D"GitCommand-lineManual-#(use&quot;gitresetHEAD&lt;file&gt;...&quot=
+;tounstage).1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp=
+; &nbsp; # (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</h6>
+<h6 id=3D"GitCommand-lineManual-#.2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; &nbsp; &nbsp;&nbsp; #</h6>
+<h6 id=3D"GitCommand-lineManual-#newfile:example.txt.1">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; #new <span><span style=3D=
+"text-decoration: none;">file:</span></span><span><span style=3D"text-decor=
+ation: none;"><strong>example.txt</strong></span></span></h6>
+<h6 id=3D"GitCommand-lineManual-#.3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp; &nbsp; &nbsp; &nbsp; #</h6>
+<h6 id=3D"GitCommand-lineManual-#Changesnotstagedforcommit:">&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; #Changes not staged for c=
+ommit:</h6>
+<h6 id=3D"GitCommand-lineManual-#(use&quot;gitadd&lt;file&gt;...&quot;toupd=
+atewhatwillbecommitted)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; # (use &quot;git add &lt;file&gt;...&quot; to update what wi=
+ll be committed)</h6>
+<h6 id=3D"GitCommand-lineManual-#.4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; #</h6>
+<h6 id=3D"GitCommand-lineManual-#modified:log4j.properties">&nbsp;&nbsp;&nb=
+sp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; #modified: <strong>log4j.=
+properties</strong></h6>
+<h6 id=3D"GitCommand-lineManual-Thelog4j.propertiesfileappearsunderasection=
+named=E2=80=9CChangesnotstagedforcommit=E2=80=9D=E2=80=94whichmeansthatafil=
+ethatistrackedhasbeenmodified">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp; The <strong>log4j.properties</strong> file appears=
+ under a section named =E2=80=9CChanges not staged for commit=E2=80=9D =E2=
+=80=94 which means that a file that is tracked has been modified</h6>
+<h6 id=3D"GitCommand-lineManual-intheworkingdirectorybutnotyetstaged.">&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+in the working directory but not yet staged.</h6>
+<h6 id=3D"GitCommand-lineManual-Tostageit,yourunthegitaddcommand">&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; To stage it,&n=
+bsp;&nbsp; you run the git add command</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitaddlog4j.properties"><strong>&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; Syntax:</strong> $git add <=
+strong>log4j.properties</strong></h6>
+</div>=20
+</div>=20
+<div id=3D"expander-528279390" class=3D"expand-container">=20
+<div id=3D"expander-control-528279390" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">5.5 Ignoring File</span>=20
+</div>=20
+<div id=3D"expander-content-528279390" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Therewillbeautomaticallygeneratedfiless=
+uchaslogfilesorfilesproducedbyyourbuildsystem.Insuchcases,youcancreateafile=
+listingpatternsto">There will be automatically generated files such as log =
+files or files produced by your build system. In such cases, you can create=
+ a file listing patterns to</h6><h6 id=3D"GitCommand-lineManual-matchthemna=
+med.gitignore.Hereisanexample.gitignorefile:">match them named .gitignore. =
+Here is an example .gitignore file:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$cat.gitignore"><strong>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> $ cat .gitignor=
+e</h6>
+<h6 id=3D"GitCommand-lineManual-*.[oa]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; *. [oa]</h6>
+<h6 id=3D"GitCommand-lineManual-*~">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; *~<span style=3D"color: rgb(51,51,0);"> <br /></span></h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-266637608" class=3D"expand-container">=20
+<div id=3D"expander-control-266637608" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">6 Committing Your Changes</span>=20
+</div>=20
+<div id=3D"expander-content-266637608" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Nowthatyourstagingareaissetupthewayyouw=
+antit,youcancommityourchanges">Now that your staging area is set up the way=
+ you want it, you can commit your&nbsp; changes</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:gitcommit-m=E2=80=9C&lt;CommitMessag=
+e&gt;=E2=80=9D"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; Syntax:</strong> git commit -m =E2=80=9C&lt;Commit Message&gt;=E2=80=9D=
+</h6>
+<h6 id=3D"GitCommand-lineManual-Theabovecommitsthechangestoyourlocalgitrepo=
+sitoryitdoesnotreflectschangesinremoterepository">&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The above commits the chang=
+es to your local git repository it does not&nbsp; reflects changes in remot=
+e repository</h6>=20
+<div id=3D"expander-1516197645" class=3D"expand-container">=20
+<div id=3D"expander-control-1516197645" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">6.1 Smart Commit</span>=20
+</div>=20
+<div id=3D"expander-content-1516197645" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-SmartCommitsallowrepositorycommittersto=
+performactionsliketransitioningJIRAissuesorcreatingCruciblecodereviewsbyemb=
+eddingspecificcommandsintotheircommitmessages.Multiplesmartcommitscanbeused=
+inonecommitmessage;howevertheymustbeonsepara">Smart Commits allow repositor=
+y committers to perform actions like transitioning JIRA issues or creating =
+Crucible code reviews by embedding specific commands into their commit mess=
+ages. Multiple smart commits can be used in one commit message; however the=
+y must be on separate lines.</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:&lt;IssueKey&gt;#&lt;Command&gt;&lt;=
+optionalCommand_Parameters&gt;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; Syntax: </strong>&lt;Issue Key&gt; #&lt;Command&gt; &lt=
+;optional Command_Parameters&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:gitcommit-m=E2=80=9CPRO-123#resolve=
+=E2=80=9C"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E=
+xample: </strong> git commit -m =E2=80=9CPRO-123 #resolve =E2=80=9C</h6>
+<h6 id=3D"GitCommand-lineManual-Theabovecommitmessagechangesthestateofthatt=
+ickettoresolve">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; The above commit message changes the state of that ticket to =
+resolve<span style=3D"color: rgb(0,0,0);"> <br /></span></h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-539241501" class=3D"expand-container">=20
+<div id=3D"expander-control-539241501" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">7 Removing Files</span>=20
+</div>=20
+<div id=3D"expander-content-539241501" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-ToremoveafilefromGit,youhavetoremoveitf=
+romyourtrackedfiles(moreaccurately,removeitfromyourstagingarea)andthencommi=
+t.The=E2=80=9Cgitrm=E2=80=9D">To remove a file from Git, you have to remove=
+ it from your tracked files (more accurately, remove it from your staging a=
+rea) and then commit. The <strong>=E2=80=9Cgit rm=E2=80=9D</strong></h6><h6=
+ id=3D"GitCommand-lineManual-commanddoesthatandalsoremovesthefilefromyourwo=
+rkingdirectorysoyoudon=E2=80=99tseeitasanuntrackedfilenexttimearound.">comm=
+and does that and also removes the file from your working directory so&nbsp=
+; you don=E2=80=99t see it as an untracked file next time around.</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitrm&lt;filename&gt;"><strong>&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> $ git r=
+m &lt;filename&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Againrunyourgitstatuscommandyouwillseesomet=
+hinglikethis">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+&nbsp;&nbsp; Again run your git status command you will see something like =
+this</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitstatus.4"><strong>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> $ git status</h6>
+<h6 style=3D"margin-left: 48.0px;" id=3D"GitCommand-lineManual-#Onbranchmas=
+ter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; # On branch master</h6>
+<h6 style=3D"margin-left: 48.0px;" id=3D"GitCommand-lineManual-#.5">&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</=
+h6>
+<h6 id=3D"GitCommand-lineManual-#Changestobecommitted:.2">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbs=
+p; # Changes to be committed:</h6>
+<h6 id=3D"GitCommand-lineManual-#(use&quot;gitresetHEAD&lt;file&gt;...&quot=
+;tounstage).2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; # (use &quot;git reset HEAD &lt;file&gt;...&quot; t=
+o unstage)</h6>
+<h6 id=3D"GitCommand-lineManual-#.6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</h6>
+<h6 id=3D"GitCommand-lineManual-#deleted:grit.gemspec">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #=
+ deleted: grit.gemspec</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1230610275" class=3D"expand-container">=20
+<div id=3D"expander-control-1230610275" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">8 Viewing the Commit History</span>=20
+</div>=20
+<div id=3D"expander-content-1230610275" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Afteryouhavecreatedseveralcommits,orify=
+ouhaveclonedarepositorywithanexistingcommithistory,you=E2=80=99llprobablywa=
+nttolookbacktoseewhat">After you have created several commits, or if you ha=
+ve cloned a repository with an existing commit history, you=E2=80=99ll prob=
+ably want to look back to see what</h6><h6 id=3D"GitCommand-lineManual-hash=
+appened.Themostbasicandpowerfultooltodothisisthe=E2=80=9Cgitlog=E2=80=9Dcom=
+mand.">has happened. The most basic and powerful tool to do this is the <st=
+rong>=E2=80=9Cgit log=E2=80=9D</strong> command.</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitlog"><strong>&nbsp; &nbsp; &nbsp=
+; &nbsp;&nbsp; Syntax:</strong>&nbsp;&nbsp;&nbsp; $git log</h6>
+<h6 id=3D"GitCommand-lineManual-Result:commitb8999cc4b5db1da2b14f32a9dc38bf=
+5c7def2bee"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result=
+: &nbsp;&nbsp; </strong>commit b8999cc4b5db1da2b14f32a9dc38bf5c7def2bee</h6=
+>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-Author:Ramya=
+KrishnaNallamothu&lt;rnallamothu@tripodtech.net&gt;">Author: Ramya Krishna =
+Nallamothu &lt;<a href=3D"mailto:rnallamothu@tripodtech.net" class=3D"exter=
+nal-link" rel=3D"nofollow">rnallamothu@tripodtech.net</a>&gt;</h6>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-Date:TueJan2=
+917:11:042013+0530">Date: Tue Jan 29 17:11:04 2013 +0530</h6>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-fileadded">f=
+ile added</h6>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-commit761275=
+864169be1b54d23e8e257585e25c1a5686">commit 761275864169be1b54d23e8e257585e2=
+5c1a5686</h6>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-Author:Ramya=
+KrishnaNallamothu&lt;rnallamothu@tripodtech.net&gt;.1">Author: Ramya Krishn=
+a Nallamothu &lt;<a href=3D"mailto:rnallamothu@tripodtech.net" class=3D"ext=
+ernal-link" rel=3D"nofollow">rnallamothu@tripodtech.net</a>&gt;</h6>
+<h6 style=3D"margin-left: 96.0px;" id=3D"GitCommand-lineManual-Date:TueJan2=
+917:05:102013+0530">Date: Tue Jan 29 17:05:10 2013 +0530</h6>
+<h6 style=3D"margin-left: 48.0px;" id=3D"GitCommand-lineManual-Fileaddedand=
+onefilemodified">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fi=
+le added and one file modified</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-296327464" class=3D"expand-container">=20
+<div id=3D"expander-control-296327464" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">9 Undoing Things</span>=20
+</div>=20
+<div id=3D"expander-content-296327464" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Atanystage,youmaywanttoundosomething">A=
+t any stage, you may want to undo something</h6></li>
+</ul>=20
+<div id=3D"expander-1277029649" class=3D"expand-container">=20
+<div id=3D"expander-control-1277029649" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">9.1 Changing Your Last Commit</span>=20
+</div>=20
+<div id=3D"expander-content-1277029649" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Oneofthecommonundostakesplacewhenyoucom=
+mittooearlyandpossiblyforgettoaddsomefiles,oryoumessupyourcommitmessage.Ify=
+ouwanttotrythatcommitagain,youcanruncommitwiththe--amendoption:">One of the=
+ common undos takes place when you commit too early and possibly forget to =
+add some files, or you mess up your commit message. If you want to try that=
+ commit again, you can run commit with the --amend option:</h6></li>
+</ul>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-Syntax:$gitc=
+ommit--amend"><strong>&nbsp;&nbsp;&nbsp; Syntax:</strong>&nbsp;&nbsp; $ git=
+ commit --amend</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-Example:Asan=
+example,ifyoucommitandthenrealizeyouforgottostagethechangesinafileyouwanted=
+toaddtothiscommit,youcandosomething"><strong>&nbsp; &nbsp; Example:</strong=
+> As an example, if you commit and then realize you forgot to stage the cha=
+nges in a file you wanted to add to this commit, you can do something</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-likethis:">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; like this:=
+</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-Syntax:$gitc=
+ommit-m'initialcommit'"><strong>&nbsp;&nbsp; Syntax:</strong> &nbsp;&nbsp; =
+$ git commit -m 'initial commit'</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-$gitaddforgo=
+tten_file">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+$ git add forgotten_file</h6>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-$gitcommit=
+=E2=80=93amend-m=E2=80=9C&lt;commitmessage&gt;">&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ git commit =E2=80=93amend -m =E2=80=9C&lt;=
+commit message&gt;</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1281723726" class=3D"expand-container">=20
+<div id=3D"expander-control-1281723726" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">9.2 Unstaging a staged file</span>=20
+</div>=20
+<div id=3D"expander-content-1281723726" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Torevertthepreviouscommitusethebelowcom=
+mand">To revert the previous commit use the below command</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:.1"><strong>&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong></h6>
+<h6 id=3D"GitCommand-lineManual-gitreset=E2=80=93mixedHEAD&lt;file&gt;-Undo=
+thelastcommitandunstagethefiles."><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> git reset =E2=80=93mixed HEAD &lt;=
+file&gt; - Undo the last commit and unstage the files.</h6>
+<h6 id=3D"GitCommand-lineManual-gitreset=E2=80=93softHEAD&lt;file&gt;-Undot=
+helastcommit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git reset =E2=80=93soft =
+HEAD &lt;file&gt; - Undo the last commit</h6>
+<h6 id=3D"GitCommand-lineManual-gitreset=E2=80=93hardHEAD&lt;file&gt;-Undot=
+helastcommit,unstagefilesANDundoanychangesintheworkingdirectory">&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; git reset =E2=80=93hard HEAD &lt;file&gt; - Undo=
+ the last commit, unstage files AND undo any changes in the working directo=
+ry</h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-1823228336" class=3D"expand-container">=20
+<div id=3D"expander-control-1823228336" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">10 Pushing Changes (Check in)</span>=20
+</div>=20
+<div id=3D"expander-content-1823228336" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Whenyouhaveyourprojectatapointthatyouwa=
+nttoshare,youhavetopushitupstream.Thecommandforthisissimple:">When you have=
+ your project at a point that you want to share, you have to push it upstre=
+am. The command for this is simple:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gitpush[remote-name][branch-name]."=
+><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</st=
+rong> $git push [remote-name] [branch- name].</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitpushoriginmaster"><strong>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example:</strong> $ git p=
+ush origin master</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1528752141" class=3D"expand-container">=20
+<div id=3D"expander-control-1528752141" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11 Tagging</span>=20
+</div>=20
+<div id=3D"expander-content-1528752141" class=3D"expand-content">=20
+<div id=3D"expander-1960219345" class=3D"expand-container">=20
+<div id=3D"expander-control-1960219345" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.1 Listing Your Tags</span>=20
+</div>=20
+<div id=3D"expander-content-1960219345" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-ListingtheavailabletagsinGitisstraightf=
+orward.Justtype">Listing the available tags in Git is straightforward. Just=
+ type</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:gittag"><strong>&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> git tag</h6>
+<h6 id=3D"GitCommand-lineManual-Result:v0.1"><strong>&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:</strong>&nbsp; v0.1</h6>
+<h6 id=3D"GitCommand-lineManual-v1.3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; v1.3</h6>
+<h6 id=3D"GitCommand-lineManual-v2.1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; v2.1</h6>
+<h6 id=3D"GitCommand-lineManual-v2.2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; v2.2</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-2118044963" class=3D"expand-container">=20
+<div id=3D"expander-control-2118044963" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.2 Creating Tags</span>=20
+</div>=20
+<div id=3D"expander-content-2118044963" class=3D"expand-content">=20
+<div id=3D"expander-1944077786" class=3D"expand-container">=20
+<div id=3D"expander-control-1944077786" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.2.1 Annotated Tags</span>=20
+</div>=20
+<div id=3D"expander-content-1944077786" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-CreatinganannotatedtaginGitissimple.The=
+easiestwayistospecify-awhenyourunthetagcommand:">Creating an annotated tag =
+in Git is simple. The easiest way is to specify -a when you run the tag com=
+mand:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gittag-av1.4-m'myversion1.4'"><stro=
+ng>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong> =
+$ git tag -a v1.4 -m 'my version 1.4'</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gittag"><strong>&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax: </strong>$ git tag</h6>
+<h6 id=3D"GitCommand-lineManual-Result:v0.1.1"><strong>&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:</strong> &nbsp; v0.1</h6>
+<h6 id=3D"GitCommand-lineManual-v1.3.1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; v1.3</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-996730242" class=3D"expand-container">=20
+<div id=3D"expander-control-996730242" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.2.2 Signed Tags</span>=20
+</div>=20
+<div id=3D"expander-content-996730242" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-YoucanalsosignyourtagswithGPG,assumingy=
+ouhaveaprivatekey.Allyouhavetodoisuse-sinsteadof-a:">You can also sign your=
+ tags with GPG, assuming you have a private key. All you have to do is use =
+-s instead of -a:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gittag-sv1.5-m'mysigned1.5tag'"><st=
+rong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong=
+> $ git tag -s v1.5 -m 'my signed 1.5 tag'</h6>
+<h6 id=3D"GitCommand-lineManual-Result:Youneedapassphrasetounlockthesecretk=
+eyfor"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resul=
+t: </strong>You need a passphrase to unlock the secret key for</h6>
+<h6 id=3D"GitCommand-lineManual-User:&quot;RamyaKrishnaNallamothu&lt;rnalla=
+mothu@tripodtech.net&gt;&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; User: &quot;Ramya Krishn=
+a Nallamothu &lt;<a href=3D"mailto:rnallamothu@tripodtech.net" class=3D"ext=
+ernal-link" rel=3D"nofollow">rnallamothu@tripodtech.net</a>&gt;&quot;</h6>
+<h6 id=3D"GitCommand-lineManual-1024-bitDSAkey,IDF721C45A,created2009-02-09=
+">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp; 1024-bit DSA key, ID F721C45A, created 2009-02-09</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1713430561" class=3D"expand-container">=20
+<div id=3D"expander-control-1713430561" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.2.3 Lightweight Tag </span>=20
+</div>=20
+<div id=3D"expander-content-1713430561" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Anotherwaytotagcommitsiswithalightweigh=
+ttag.Thisisbasicallythecommitchecksumstoredinafile=E2=80=94nootherinformati=
+oniskept.Tocreatealightweighttag,don=E2=80=99tsupplythe-a,-s,or-moption:"><=
+span>Another way to tag commits is with a lightweight tag. This is basicall=
+y the commit checksum stored in a file =E2=80=94 no other information is ke=
+pt. To create a lightweight tag, don=E2=80=99t supply the -a,-s, or -m opti=
+on:</span></h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gittagv1.4-lw"><strong>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax: </strong>$git tag v1.4-lw</h6>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gittag.1"><strong>&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax: </strong>$git tag</h6>
+<h6 id=3D"GitCommand-lineManual-Result:v0.1.2"><strong>&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; Result: &nbsp; v</strong>0.1</h6>
+<h6 id=3D"GitCommand-lineManual-v1.3.2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v1.3=
+</h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-1806222052" class=3D"expand-container">=20
+<div id=3D"expander-control-1806222052" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.3 Verifying Tags</span>=20
+</div>=20
+<div id=3D"expander-content-1806222052" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Toverifyasignedtag,youusegittag-v[tag-n=
+ame].ThiscommandusesGPGtoverifythesignature.Youneedthesigner=E2=80=99spubli=
+ckeyinyourkeyringfor">To verify a signed tag, you use git tag -v [tag-name]=
+. This command uses GPG to verify the signature. You need the signer=E2=80=
+=99s public key in your key ring for</h6><h6 id=3D"GitCommand-lineManual-th=
+istoworkproperly:">this to work properly:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:$gittag-vv1.4.2.1"><strong>&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax: </strong>$ git tag -v=
+ v1.4.2.1</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-176621907" class=3D"expand-container">=20
+<div id=3D"expander-control-176621907" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">11.4 Sharing Tags</span>=20
+</div>=20
+<div id=3D"expander-content-176621907" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Bydefault,thegitpushcommanddoesn=E2=80=
+=99ttransfertagstoremoteservers.Youwillhavetoexplicitlypushtagstoasharedser=
+verafteryouhavecreatedthem.Thisprocessisjustlikesharingremotebranches=E2=80=
+=94youcanrunthebelowcommand">By default, the git push command doesn=E2=80=
+=99t transfer tags to remote servers. You will have to explicitly push tags=
+ to a shared server after you have created them. This process is just like =
+sharing remote branches =E2=80=94 you can run the below&nbsp; command</h6><=
+/li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:gitpushorigin[tagname]."><strong>&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:</strong>&nbsp;&nbsp;&=
+nbsp;&nbsp; git push origin [tagname].</h6>
+<h6 id=3D"GitCommand-lineManual-Example:$gitpushoriginv1.5"><strong>&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: </strong>$ git push orig=
+in v1.5</h6>
+<h6 id=3D"GitCommand-lineManual-Result:Countingobjects:50,done."><strong>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result: &nbsp; </strong>Coun=
+ting objects: 50, done.</h6>
+<h6 id=3D"GitCommand-lineManual-Compressingobjects:100%(38/38),done.">&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; Compressing objects: 100% (38/38), done.</h6>
+<h6 id=3D"GitCommand-lineManual-Writingobjects:100%(44/44),4.56KiB,done.">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; Writing objects: 100% (44/44), 4.56 KiB, done.</h6>
+<h6 id=3D"GitCommand-lineManual-Total44(delta18),reused8(delta1)">&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Total 44 (delta 18), reused 8 (delta 1)</h6>
+<h6 id=3D"GitCommand-lineManual-Tohttps://rnallamothu@bitbucket.org/rnallam=
+othu/eureqa.git">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To <span><u><a href=3D"https://rnallamo=
+thu@bitbucket.org/rnallamothu/eureqa.git" class=3D"external-link" rel=3D"no=
+follow">https://rnallamothu@bitbucket.org/rnallamothu/eureqa.git</a></u></s=
+pan></h6>
+<h6 id=3D"GitCommand-lineManual-*[newtag]v1.5-&gt;v1.5"><strong>&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * [new tag] v1.5 -&gt; v1.5</stron=
+g></h6>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-425838015" class=3D"expand-container">=20
+<div id=3D"expander-control-425838015" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">12 Branching</span>=20
+</div>=20
+<div id=3D"expander-content-425838015" class=3D"expand-content">=20
+<div id=3D"expander-390342909" class=3D"expand-container">=20
+<div id=3D"expander-control-390342909" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">12.1 Creation of Branches</span>=20
+</div>=20
+<div id=3D"expander-content-390342909" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-ToCreateNewBranch">To Create New Branch=
+</h6></li>
+</ul>
+<h6 style=3D"margin-left: 77.7667px;" id=3D"GitCommand-lineManual-Syntax:gi=
+tbranch&lt;branchname&gt;"><strong> Syntax</strong>: git branch &lt;branch =
+name&gt;</h6>
+<h6 style=3D"margin-left: 77.7667px;" id=3D"GitCommand-lineManual-Example:g=
+itbranchbranch1"><strong> Example</strong>: git branch branch1</h6>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Toswitchbetweendifferentbrancheswhichal=
+readyexists">To switch between different branches which already exists</h6>=
+</li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Syntax:gitcheckout&lt;branchname&gt;"><stro=
+ng>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax</strong>: git checkout &lt;bran=
+ch name&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-Example:gitcheckoutmaster"><strong>&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp; Example:</strong> git checkout master</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1427821855" class=3D"expand-container">=20
+<div id=3D"expander-control-1427821855" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">12.2 Working With Multiple Branches</sp=
+an>=20
+</div>=20
+<div id=3D"expander-content-1427821855" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Switchtothespecificbranchtoworkwithandm=
+akechanges">Switch to the specific branch to work with and make changes</h6=
+></li>
+<li><h6 id=3D"GitCommand-lineManual-StagetheChangesmadeonthebranch">Stage t=
+he Changes made on the branch</h6><h6 id=3D"GitCommand-lineManual-Syntax:gi=
+tadd&lt;file/files&gt;"><strong>Syntax:</strong> git add &lt;file/files&gt;=
+</h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Committhechanges">Commit the changes</h=
+6><h6 id=3D"GitCommand-lineManual-Syntax:gitcommit-m&lt;commitmessage&gt;">=
+<strong>Syntax</strong>: git commit -m &lt;commit message&gt;&nbsp;</h6></l=
+i>
+<li><h6 id=3D"GitCommand-lineManual-PushchangesmadeinlocalmachinetoRemote">=
+<strong>&nbsp;</strong>Push changes made in local machine to Remote</h6><h6=
+ id=3D"GitCommand-lineManual-Syntax:gitpushorigin&lt;branchname&gt;"><stron=
+g>Syntax</strong>: git push origin &lt;branch name&gt;</h6></li>
+</ul>
+<h6 style=3D"margin-left: 24.0px;" id=3D"GitCommand-lineManual-Note:IntheSi=
+milarwaycanswitchbetweendifferentbranchesandcanworkondifferentbranches"><st=
+rong>&nbsp;&nbsp; Note: </strong>In the Similar way can switch between diff=
+erent branches and can work on different branches</h6>
+</div>=20
+</div>=20
+<div id=3D"expander-1727108263" class=3D"expand-container">=20
+<div id=3D"expander-control-1727108263" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">12.3 Merging Different Branches</span>=
+=20
+</div>=20
+<div id=3D"expander-content-1727108263" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Tomergeabranchin,switchtothebranchyouwa=
+nttomergeintoandrunthe=E2=80=98gitmerge=E2=80=99command">To merge a branch =
+in, switch to the branch you want to merge into and run the =E2=80=98git me=
+rge=E2=80=99 command</h6><h6 id=3D"GitCommand-lineManual-Syntax:gitmerge&lt=
+;branchname&gt;"><strong> Syntax</strong>: git merge &lt;branch name&gt;<st=
+rong><br /></strong></h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ifitcanmergecleanly,you=E2=80=99llsimpl=
+yseesomethinglikethis:">If it can merge cleanly, you=E2=80=99ll simply see =
+something like this:</h6><h6 id=3D"GitCommand-lineManual-ExpectedOutput:Aut=
+o-merging&lt;Files&gt;"><strong>Expected Output</strong>: Auto-merging &lt;=
+Files&gt;</h6><h6 id=3D"GitCommand-lineManual-Mergemadebyrecursive.">&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Merge made by recursive.</h6><h6 id=3D"=
+GitCommand-lineManual-&lt;Files&gt;|x+">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;Files&gt; | x +</h6><h6 id=3D"GitCo=
+mmand-lineManual-xfileschanged,xinsertions(+),xdeletions(-)">&nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; x files changed, x inse=
+rtions(+), x deletions(-)<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;</strong></h6></li>
+<li><h6 id=3D"GitCommand-lineManual-Ifsometimethingsdon'tgotsmoothlyandifyo=
+ugetamergeconfilctyouwillseesomethinglikethisinstead,">If sometime things d=
+on't got smoothly and if you get a merge confilct you will see something li=
+ke this instead,</h6><h6 id=3D"GitCommand-lineManual-ExpectedOutput:Auto-me=
+rging&lt;Files&gt;.1"><strong>Expected Output : Auto-merging &lt;Files&gt; =
+</strong></h6><h6 id=3D"GitCommand-lineManual-CONFLICT(content):Mergeconfli=
+ctin&lt;SpecificFiles&gt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; =
+CONFLICT (content): Merge conflict in &lt;Specific Files&gt;</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-Automaticmergefailed;fixconflictsandthencom=
+mittheresult.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; Automatic merge failed; fix conflicts and then commit the result.=
+</h6>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Inthiscaseitwilltellyouthefilesthatdidn=
+otmergecleanly,andyoucansimplyresolvetheconflictsmanually.Openthefileyoucan=
+seenormalmergeconflictmarkerinit.">&nbsp;In this case it will tell you the =
+files that did not merge cleanly, and you can simply resolve the conflicts =
+manually. Open the file you can see normal merge conflict marker in it.</h6=
+></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD:&lt;Specif=
+icFile&gt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&lt;=
+&lt;&lt;&lt;&lt;&lt; HEAD: &lt;Specific File&gt;</h6>
+<h6 style=3D"margin-left: 144.0px;" id=3D"GitCommand-lineManual-Contentincu=
+rrentworkingbranch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Content in current working branch</h6>
+<h6 style=3D"margin-left: 144.0px;" id=3D"GitCommand-lineManual-=3D=3D=3D=
+=3D=3D=3D=3D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =3D=3D=3D=3D=3D=3D=3D</h6>
+<h6 style=3D"margin-left: 144.0px;" id=3D"GitCommand-lineManual-Contentinbr=
+anch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; &nbsp; Content in branch</h6>
+<h6 style=3D"margin-left: 144.0px;" id=3D"GitCommand-lineManual-&gt;&gt;&gt=
+;&gt;&gt;&gt;&gt;&lt;AnotherBranch&gt;:&lt;SpecificFile&gt;">&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt;&=
+gt;&gt;&gt;&gt; &lt;Another Branch&gt;:&lt;Specific File&gt;</h6>
+<h6 id=3D"GitCommand-lineManual-end">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; end</h6>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Insuchacasefollowbelowsteps:">&nbsp;&nb=
+sp; In such a case follow below steps:</h6></li>
+</ul>
+<h6 id=3D"GitCommand-lineManual-(a)Resolvetheconflict">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Resolv=
+e the conflict</h6>
+<h6 id=3D"GitCommand-lineManual-(b)Stagethechanges">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (b) Stage the chan=
+ges</h6>
+<h6 id=3D"GitCommand-lineManual-(c)Committhechanges">&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; (c) Commit the changes=
+</h6>
+<h6 id=3D"GitCommand-lineManual-(d)Pushthechanges">&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; (d) Push the =
+changes</h6>
+<p>&nbsp;</p>
+</div>=20
+</div>=20
+<div id=3D"expander-1191649449" class=3D"expand-container">=20
+<div id=3D"expander-control-1191649449" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">12.4 Deletion of Branches</span>=20
+</div>=20
+<div id=3D"expander-content-1191649449" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Todeletethebranches">To delete the bran=
+ches</h6><h6 id=3D"GitCommand-lineManual-Syntax:gitbranch-d&lt;branchname&g=
+t;"><strong>Syntax</strong>: <code>git branch -d &lt;branch name&gt;</code>=
+</h6></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<div id=3D"expander-243195250" class=3D"expand-container">=20
+<div id=3D"expander-control-243195250" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">13 Submodules</span>=20
+</div>=20
+<div id=3D"expander-content-243195250" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Itessentiallyallowsyoutoattachanexterna=
+lrepositoryinsideanotherrepositoryataspecificpath."><code>It essentially al=
+lows you to attach an external repository inside another repository at a sp=
+ecific path.</code></h6></li>
+</ul>=20
+<div id=3D"expander-1830859577" class=3D"expand-container">=20
+<div id=3D"expander-control-1830859577" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">13.1 Adding Submodules</span>=20
+</div>=20
+<div id=3D"expander-content-1830859577" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Clonetherepositorytowhichyouwanttoaddan=
+otherrepositoryassubmodule"><code> Clone the repository to which you want t=
+o add another repository as submodule</code></h6><h6 id=3D"GitCommand-lineM=
+anual-Syntax:gitclone&lt;RepositoryURL&gt;"><code><strong>&nbsp;</strong> S=
+yntax</code><code>: git clone &lt;RepositoryURL</code><code><strong>&gt;</s=
+trong></code></h6><h6 id=3D"GitCommand-lineManual-Example:gitclonehttps://r=
+nallamothu@bitbucket.org/rnallamothu/master_repo.git"><code><strong>&nbsp; =
+</strong>Example: </code><code>git clone</code><span><span style=3D"text-de=
+coration: none;"><strong><a href=3D"https://rnallamothu@bitbucket.org/rnall=
+amothu/master_repo.git" class=3D"external-link" rel=3D"nofollow">&nbsp; htt=
+ps://rnallamothu@bitbucket.org/rnallamothu/master_repo.git</a></strong></sp=
+an></span><code><strong>&nbsp; <br /></strong></code></h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Changetothelocationwhererepositorywascl=
+oned"><code> Change to the location where repository was cloned</code></h6>=
+<h6 id=3D"GitCommand-lineManual-Syntax:cd&lt;Pathtoclonedrepository&gt;"><c=
+ode>&nbsp;Syntax<strong> : </strong></code><code>cd &lt;Path to cloned repo=
+sitory&gt;</code></h6><h6 id=3D"GitCommand-lineManual-Example:cd/home/rnall=
+amothu/Videos/master_repo"><code>&nbsp;Example: </code><code>cd /home/rnall=
+amothu/Videos/master_repo</code></h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Runthebelowcommandtoaddsubmodule"><code=
+> Run the below command to add submodule</code></h6><h6 id=3D"GitCommand-li=
+neManual-Syntax:gitsubmoduleadd&lt;RepositoryUrl&gt;"><code>Syntax: </code>=
+<code>git submodule add &lt;Repository Url &gt;</code></h6><h6 id=3D"GitCom=
+mand-lineManual-Example:gitsubmoduleaddhttps://rnallamothu@bitbucket.org/rn=
+allamothu/java_source.git"><code><strong>&nbsp;&nbsp;&nbsp;&nbsp; Example</=
+strong></code><code>:git submodule add<a href=3D"https://rnallamothu@bitbuc=
+ket.org/rnallamothu/java_source.git" class=3D"external-link" rel=3D"nofollo=
+w">&nbsp; https://rnallamothu@bitbucket.org/rnallamothu/java_source.git</a>=
+</code></h6><h6 id=3D"GitCommand-lineManual-Result:Cloninginto'branch_test'=
+..."><code><strong>&nbsp;&nbsp;&nbsp;&nbsp; Result:</strong></code><code> C=
+loning into 'branch_test'...</code></h6><h6 id=3D"GitCommand-lineManual-Use=
+rnamefor'https://bitbucket.org':&lt;EnterUsername&gt;"><code>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Username for '<a=
+ href=3D"https://bitbucket.org" class=3D"external-link" rel=3D"nofollow">ht=
+tps://bitbucket.org</a>': &lt;Enter Username&gt;</code></h6><h6 id=3D"GitCo=
+mmand-lineManual-Passwordfor'https://rnallamothu@bitbucket.org':&lt;EnterPa=
+ssword&gt;"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; Password for '<a href=3D"https://rnallamothu@bitbucket.org"=
+ class=3D"external-link" rel=3D"nofollow">https://rnallamothu@bitbucket.org=
+</a>': &lt;Enter Password&gt;</code></h6><h6 id=3D"GitCommand-lineManual-re=
+mote:Countingobjects:14,done."><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; remote: Counting objects: 14, done.</cod=
+e></h6><h6 id=3D"GitCommand-lineManual-remote:Compressingobjects:100%(6/6),=
+done."><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; remote: Compressing objects: 100% (6/6), done.</code></h6><h6 id=
+=3D"GitCommand-lineManual-remote:Total14(delta1),reused0(delta0)"><code>&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; remot=
+e: Total 14 (delta 1), reused 0 (delta 0)</code></h6><h6 id=3D"GitCommand-l=
+ineManual-Unpackingobjects:100%(14/14),done."><code>&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unpacking objects: 100% (=
+14/14), done.</code><code><strong>&nbsp;&nbsp; </strong><br /></code></h6><=
+/li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Nowcheckthestatusbyrunningbelowcommand"=
+><code> Now check the status by running below command</code></h6><h6 id=3D"=
+GitCommand-lineManual-Syntax:gitstatus"><code><strong> &nbsp;&nbsp; </stron=
+g>Syntax<strong>: </strong></code><code>git status</code></h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Nowcommitthechangesbyrunningbelowcomman=
+d"><code>Now commit the changes by running below command</code></h6><h6 id=
+=3D"GitCommand-lineManual-gitcommit-m&lt;commitmessage&gt;"><code>&nbsp; gi=
+t commit -m &lt;commit message&gt;</code></h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Pushchangestoremote"><code> Push change=
+s to remote</code></h6><h6 id=3D"GitCommand-lineManual-Syntax:gitpushorigin=
+master"><code><strong>Syntax</strong></code><code>: git push origin master<=
+/code></h6></li>
+</ul>
+</div>=20
+</div>=20
+<div id=3D"expander-465153902" class=3D"expand-container">=20
+<div id=3D"expander-control-465153902" class=3D"expand-control">=20
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"2bc7697a296f14a3e3b94712d63f9045" widt=
+h=3D"16" height=3D"16" /></span>
+<span class=3D"expand-control-text">13.2 Working with submodules</span>=20
+</div>=20
+<div id=3D"expander-content-465153902" class=3D"expand-content">
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Ingitsubmodulearetracedinthreelocations=
+:"><code>In git submodule are traced in three locations:</code></h6></li>
+</ul>
+<p>&nbsp;</p>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"21200951">=
+=20
+<li data-inline-task-id=3D"4"><h6 id=3D"GitCommand-lineManual-.gitmodules">=
+<code>.gitmodules</code></h6></li>=20
+<li data-inline-task-id=3D"5"><h6 id=3D"GitCommand-lineManual-git/config"><=
+code>&nbsp;git/config</code></h6></li>=20
+<li data-inline-task-id=3D"6"><h6 id=3D"GitCommand-lineManual-.thesubmodule=
+entryintheindex/commititself."><code>.the submodule entry in the index/comm=
+it itself.</code></h6></li>=20
+</ul>=20
+<p>&nbsp;</p>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Toremovethefirsttwo,isreallysimple,youj=
+usteditthosefilesandremovethelinesthatspecifythesubmdoule.Inordertodeleteth=
+ethirdandlasttraceofthesubmoduleingit,youneedtotypethefollowingcommand:">To=
+ remove the first two, is really simple, you just edit those files and remo=
+ve the lines that specify the submdoule. In order to delete the third and l=
+ast trace of the submodule in git, you need to type the following command:<=
+/h6><h6 id=3D"GitCommand-lineManual-Syntax:gitrm--cachedpath/to/submoduleNo=
+te:Donotputatrailingslashattheendofpath.Ifyouputatrailingslashattheendofthe=
+command,itwillfail."><code><strong>Syntax:</strong></code><code> git rm --c=
+ached path/to/submodule<br /></code><strong>Note:</strong><code> Do not put=
+ a trailing slash at the end of path. If you put a trailing slash at the en=
+d of the command, it will fail.</code></h6></li>
+</ul>
+<ul>
+<li><h6 id=3D"GitCommand-lineManual-Intheexampleabove,wewouldtype(donotincl=
+udetrailingslashaftersubmodule1)Syntax:gitrm--cachedvendors/submodule">In t=
+he example above, we would type (<strong>do not include trailing slash afte=
+r submodule1</strong>)<br /><code><strong>Syntax: </strong></code><code>git=
+ rm --cached vendors/submodule</code></h6></li>
+</ul>
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_32_21675844.1407142796950
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/2bc7697a296f14a3e3b94712d63f9045
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_32_21675844.1407142796950--
